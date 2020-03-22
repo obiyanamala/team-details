@@ -1,0 +1,16 @@
+<div>
+  <table class="table table-bordered">
+    <thead class="header">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employeeTeam of employeeTeams">
+        <td>{{ employeeTeam.id }}</td>
+        <td>{{ employeeTeam.teamName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

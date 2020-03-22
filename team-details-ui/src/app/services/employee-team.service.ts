@@ -5,13 +5,12 @@ import { Observable } from "rxjs";
 @Injectable({
   providedIn: "root"
 })
-export class EmployeeService {
-  private baseUrl = "http://localhost:8080/employees";
-  //private baseUrl = "https://api.github.com/users/obiyanamala";
+export class EmployeeTeamService {
+  private baseUrl = "http://localhost:8080/teams";
   response: any;
   constructor(private httpClient: HttpClient) {}
 
-  getAllEmployees(): Observable<any> {
+  getAllTeams(): Observable<any> {
     return this.httpClient.get(this.baseUrl);
   }
 }

@@ -1,17 +1,25 @@
 <div>
-  <table border="1">
-    <thead>
+  <table class="table table-bordered">
+    <thead class="header">
       <tr>
-        <th></th>
         <th>Name</th>
         <th>Designation</th>
+        <th>Skills</th>
+        <th>ImageUrl</th>
+        <th>Active</th>
+        <th>Experience</th>
+        <th>Joined On</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let employee of employees">
-        <td></td>
         <td>{{ employee.name }}</td>
         <td>{{ employee.designation }}</td>
+        <td>{{ employee.skills }}</td>
+        <td>{{ employee.imageUrl }}</td>
+        <td>{{ employee.active }}</td>
+        <td>{{ employee.experience }}</td>
+        <td>{{ employee.joinedOn | date: "dd/MM/yyyy" }}</td>
       </tr>
     </tbody>
   </table>
